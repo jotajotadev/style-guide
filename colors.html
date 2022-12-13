@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/favicon.png" sizes="16x16">
     <title>Wally Style guide</title>
+    <link rel="stylesheet" href="./css/prism.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,222 +25,427 @@
             <input class="search-header" id="search-header" type="search" placeholder="Muy pronto podrás buscar">
         </div>
     </header>
+    <aside class="aside-section">
+        <h4 class="title-aside">Style guide</h4>
+        <ul class="list-aside">
+            <a href="./colors.html" class="link-aside"><li class="item-aside">Color</li></a>
+            <a href="#" class="link-aside"><li class="item-aside">Typography <span class="tag">Working</span></li></a>
+            <a href="#" class="link-aside"><li class="item-aside">Icons <span class="tag">Working</span></li></a>
+            <a href="#" class="link-aside"><li class="item-aside">Spacing <span class="tag">Working</span></li></a>
+            <a href="#" class="link-aside"><li class="item-aside">Grids <span class="tag">Working</span></li></a>
+            <a href="#" class="link-aside"><li class="item-aside">Shadows <span class="tag">Working</span></li></a>
+        </ul>
+    </aside>
     <div class="body-container">
-        <aside class="aside-section">
-            <h4 class="title-aside">Style guide</h4>
-            <ul class="list-aside">
-                <a href="./colors.html" class="link-aside"><li class="item-aside">Color</li></a>
-                <a href="#" class="link-aside"><li class="item-aside">Typography <span class="tag">Working</span></li></a>
-                <a href="#" class="link-aside"><li class="item-aside">Icons <span class="tag">Working</span></li></a>
-                <a href="#" class="link-aside"><li class="item-aside">Spacing <span class="tag">Working</span></li></a>
-                <a href="#" class="link-aside"><li class="item-aside">Grids <span class="tag">Working</span></li></a>
-                <a href="#" class="link-aside"><li class="item-aside">Shadows <span class="tag">Working</span></li></a>
-            </ul>
-        </aside>
         <div class="content-body-container">
-            <h2 class="title">Colores</h2>
-            <div class="group-colors">
-                <div class="wrap-color">
-                    <h4 class="title-wrap-color">Primary</h4>
-                    <div class="wrap-color-squares">
-                        <div class="color-square primary-400">
-                            <p class="text-color-squeare c-neutral-50">primary-400</p>
-                            <p class="text-color-squeare c-neutral-50">#135B31</p>
+            <section class="section-content">
+                <h2 class="title">Colores</h2>
+                <p class="paragraph">La presente guía muestra y documenta la nueva paleta de colores para el Style guide de Wally</p>
+                <div class="group-colors">
+                    <div class="wrap-color">
+                        <h4 class="title-wrap-color">Primary</h4>
+                        <div class="wrap-color-squares">
+                            <div class="color-square primary-400">
+                                <p class="text-color-squeare c-neutral-50">primary-400</p>
+                                <p class="text-color-squeare c-neutral-50">#135B31</p>
+                            </div>
+                            <div class="color-square primary-300" >
+                                <p class="text-color-squeare c-neutral-50">primary-300</p>
+                                <p class="text-color-squeare c-neutral-50">#1C884A</p>
+                            </div>
+                            <div class="color-square primary-200">
+                                <p class="text-color-squeare c-neutral-400">primary-200</p>
+                                <p class="text-color-squeare c-neutral-400">#25B562</p>
+                            </div>
+                            <div class="color-square primary-100">
+                                <p class="text-color-squeare c-neutral-400">primary-100</p>
+                                <p class="text-color-squeare c-neutral-400">#A4ECC3</p>
+                            </div>
+                            <div class="color-square primary-50">
+                                <p class="text-color-squeare c-neutral-400">primary-50</p>
+                                <p class="text-color-squeare c-neutral-400">#E1F9EB</p>
+                            </div>
                         </div>
-                        <div class="color-square primary-300" >
-                            <p class="text-color-squeare c-neutral-50">primary-300</p>
-                            <p class="text-color-squeare c-neutral-50">#1C884A</p>
+                    </div>
+                    <div class="wrap-color">
+                        <h4 class="title-wrap-color">Neutral</h4>
+                        <div class="wrap-color-squares">
+                            <div class="color-square neutral-400">
+                                <p class="text-color-squeare c-neutral-50">neutral-400</p>
+                                <p class="text-color-squeare c-neutral-50">#1E293B</p>
+                            </div>
+                            <div class="color-square neutral-300" >
+                                <p class="text-color-squeare c-neutral-50">neutral-300</p>
+                                <p class="text-color-squeare c-neutral-50 ">#5A687D</p>
+                            </div>
+                            <div class="color-square neutral-200">
+                                <p class="text-color-squeare c-neutral-400">neutral-200</p>
+                                <p class="text-color-squeare c-neutral-400">#CBD5E1</p>
+                            </div>
+                            <div class="color-square neutral-100">
+                                <p class="text-color-squeare c-neutral-400">neutral-100</p>
+                                <p class="text-color-squeare c-neutral-400">#F8FAFC</p>
+                            </div>
+                            <div class="color-square neutral-50">
+                                <p class="text-color-squeare c-neutral-400">neutral-50</p>
+                                <p class="text-color-squeare c-neutral-400">#FFFFFF</p>
+                            </div>
                         </div>
-                        <div class="color-square primary-200">
-                            <p class="text-color-squeare c-neutral-400">primary-200</p>
-                            <p class="text-color-squeare c-neutral-400">#25B562</p>
+                    </div>
+                    <div class="wrap-color">
+                        <h4 class="title-wrap-color">Amber</h4>
+                        <div class="wrap-color-squares">
+                            <div class="color-square amber-400">
+                                <p class="text-color-squeare c-neutral-400">amber-400</p>
+                                <p class="text-color-squeare c-neutral-400">#907349</p>
+                            </div>
+                            <div class="color-square amber-300" >
+                                <p class="text-color-squeare c-neutral-400">amber-300</p>
+                                <p class="text-color-squeare c-neutral-400">#D7AB6D</p>
+                            </div>
+                            <div class="color-square amber-200">
+                                <p class="text-color-squeare c-neutral-400">amber-200</p>
+                                <p class="text-color-squeare c-neutral-400">#FDC980</p>
+                            </div>
+                            <div class="color-square amber-100">
+                                <p class="text-color-squeare c-neutral-400">amber-100</p>
+                                <p class="text-color-squeare c-neutral-400">#FEDDAF</p>
+                            </div>
+                            <div class="color-square amber-50">
+                                <p class="text-color-squeare c-neutral-400">amber-50</p>
+                                <p class="text-color-squeare c-neutral-400">#FFFBEB</p>
+                            </div>
                         </div>
-                        <div class="color-square primary-100">
-                            <p class="text-color-squeare c-neutral-400">primary-100</p>
-                            <p class="text-color-squeare c-neutral-400">#A4ECC3</p>
+                    </div>
+                    <div class="wrap-color">
+                        <h4 class="title-wrap-color">Purple</h4>
+                        <div class="wrap-color-squares">
+                            <div class="color-square purple-400">
+                                <p class="text-color-squeare c-neutral-50">purple-400</p>
+                                <p class="text-color-squeare c-neutral-50">#411782</p>
+                            </div>
+                            <div class="color-square purple-300" >
+                                <p class="text-color-squeare c-neutral-50">purple-300</p>
+                                <p class="text-color-squeare c-neutral-50">#6D28D9</p>
+                            </div>
+                            <div class="color-square purple-200">
+                                <p class="text-color-squeare c-neutral-50">purple-200</p>
+                                <p class="text-color-squeare c-neutral-50">#9333EA</p>
+                            </div>
+                            <div class="color-square purple-100">
+                                <p class="text-color-squeare c-neutral-400">purple-100</p>
+                                <p class="text-color-squeare c-neutral-400">#E9D5FF</p>
+                            </div>
+                            <div class="color-square purple-50">
+                                <p class="text-color-squeare c-neutral-400">purple-50</p>
+                                <p class="text-color-squeare c-neutral-400">#F5F3FF</p>
+                            </div>
                         </div>
-                        <div class="color-square primary-50">
-                            <p class="text-color-squeare c-neutral-400">primary-50</p>
-                            <p class="text-color-squeare c-neutral-400">#E1F9EB</p>
+                    </div>
+                    <div class="wrap-color">
+                        <h4 class="title-wrap-color">Orange</h4>
+                        <div class="wrap-color-squares">
+                            <div class="color-square orange-400">
+                                <p class="text-color-squeare c-neutral-400">orange-400</p>
+                                <p class="text-color-squeare c-neutral-400">#C85C04</p>
+                            </div>
+                            <div class="color-square orange-300" >
+                                <p class="text-color-squeare c-neutral-400">orange-300</p>
+                                <p class="text-color-squeare c-neutral-400">#FA7305</p>
+                            </div>
+                            <div class="color-square orange-200">
+                                <p class="text-color-squeare c-neutral-400">orange-200</p>
+                                <p class="text-color-squeare c-neutral-400">#FB923C</p>
+                            </div>
+                            <div class="color-square orange-100">
+                                <p class="text-color-squeare c-neutral-400">orange-100</p>
+                                <p class="text-color-squeare c-neutral-400">#FDC79B</p>
+                            </div>
+                            <div class="color-square orange-50">
+                                <p class="text-color-squeare c-neutral-400">orange-50</p>
+                                <p class="text-color-squeare c-neutral-400">#FEF1E6</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-color">
+                        <h4 class="title-wrap-color">Blue</h4>
+                        <div class="wrap-color-squares">
+                            <div class="color-square blue-400">
+                                <p class="text-color-squeare c-neutral-50">blue-400</p>
+                                <p class="text-color-squeare c-neutral-50">#1F3B7A</p>
+                            </div>
+                            <div class="color-square blue-300" >
+                                <p class="text-color-squeare c-neutral-50">blue-300</p>
+                                <p class="text-color-squeare c-neutral-50">#294FA3</p>
+                            </div>
+                            <div class="color-square blue-200">
+                                <p class="text-color-squeare c-neutral-50">blue-200</p>
+                                <p class="text-color-squeare c-neutral-50">#366CE2</p>
+                            </div>
+                            <div class="color-square blue-100">
+                                <p class="text-color-squeare c-neutral-400">blue-100</p>
+                                <p class="text-color-squeare c-neutral-400">#BFDBFE</p>
+                            </div>
+                            <div class="color-square blue-50">
+                                <p class="text-color-squeare c-neutral-400">blue-50</p>
+                                <p class="text-color-squeare c-neutral-400">#EFF6FF</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-color">
+                        <h4 class="title-wrap-color">Yellow</h4>
+                        <div class="wrap-color-squares">
+                            <div class="color-square yellow-400">
+                                <p class="text-color-squeare c-neutral-50">yellow-400</p>
+                                <p class="text-color-squeare c-neutral-50">#A16207</p>
+                            </div>
+                            <div class="color-square yellow-300" >
+                                <p class="text-color-squeare c-neutral-400">yellow-300</p>
+                                <p class="text-color-squeare c-neutral-400">#CA8A04</p>
+                            </div>
+                            <div class="color-square yellow-200">
+                                <p class="text-color-squeare c-neutral-400">yellow-200</p>
+                                <p class="text-color-squeare c-neutral-400">#EAB308</p>
+                            </div>
+                            <div class="color-square yellow-100">
+                                <p class="text-color-squeare c-neutral-400">yellow-100</p>
+                                <p class="text-color-squeare c-neutral-400">#FEF08A</p>
+                            </div>
+                            <div class="color-square yellow-50">
+                                <p class="text-color-squeare c-neutral-400">yellow-50</p>
+                                <p class="text-color-squeare c-neutral-400">#FEFCE8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-color">
+                        <h4 class="title-wrap-color">Red</h4>
+                        <div class="wrap-color-squares">
+                            <div class="color-square red-400">
+                                <p class="text-color-squeare c-neutral-50">red-400</p>
+                                <p class="text-color-squeare c-neutral-50">#AD341F</p>
+                            </div>
+                            <div class="color-square red-300" >
+                                <p class="text-color-squeare c-neutral-400">red-300</p>
+                                <p class="text-color-squeare c-neutral-400">#DC5138</p>
+                            </div>
+                            <div class="color-square red-200">
+                                <p class="text-color-squeare c-neutral-400">red-200</p>
+                                <p class="text-color-squeare c-neutral-400">#FF6347</p>
+                            </div>
+                            <div class="color-square red-100">
+                                <p class="text-color-squeare c-neutral-400">red-100</p>
+                                <p class="text-color-squeare c-neutral-400">#FFA999</p>
+                            </div>
+                            <div class="color-square red-50">
+                                <p class="text-color-squeare c-neutral-400">red-50</p>
+                                <p class="text-color-squeare c-neutral-400">#FFE9E5</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="wrap-color">
-                    <h4 class="title-wrap-color">Neutral</h4>
-                    <div class="wrap-color-squares">
-                        <div class="color-square neutral-400">
-                            <p class="text-color-squeare c-neutral-50">neutral-400</p>
-                            <p class="text-color-squeare c-neutral-50">#1E293B</p>
-                        </div>
-                        <div class="color-square neutral-300" >
-                            <p class="text-color-squeare c-neutral-50">neutral-300</p>
-                            <p class="text-color-squeare c-neutral-50 ">#5A687D</p>
-                        </div>
-                        <div class="color-square neutral-200">
-                            <p class="text-color-squeare c-neutral-400">neutral-200</p>
-                            <p class="text-color-squeare c-neutral-400">#CBD5E1</p>
-                        </div>
-                        <div class="color-square neutral-100">
-                            <p class="text-color-squeare c-neutral-400">neutral-100</p>
-                            <p class="text-color-squeare c-neutral-400">#F8FAFC</p>
-                        </div>
-                        <div class="color-square neutral-50">
-                            <p class="text-color-squeare c-neutral-400">neutral-50</p>
-                            <p class="text-color-squeare c-neutral-400">#FFFFFF</p>
-                        </div>
-                    </div>
+            </section>
+            <section class="section-content">
+                <h3 class="sub-title">Colores en CSS</h3>
+                <p class="paragraph">Para poder usar la nueva paleta de colores solo es necesario copiar el código que se muestra en la parte inferior. (Si en caso el proyecto se trabajará con un preprocesador de CSS o un Framework, es necesario adaptarlo y mantener los mismos códigos hexadecimales.)</p>
+                <div class="container-code">
+                    <pre>
+                        <code id="code" class="language-css">
+                            :root {
+                                /* Colors */
+                                
+                                /* --Primary */
+                                --primary-400: #135B31;
+                                --primary-300: #1C884A;
+                                --primary-200: #25B562;
+                                --primary-100: #A4ECC3;
+                                --primary-50: #E1F9EB;
+                                
+                                /* --Neutral */
+                                --neutral-400: #1E293B;
+                                --neutral-300: #5A687D;
+                                --neutral-200: #CBD5E1;
+                                --neutral-100: #F8FAFC;
+                                --neutral-50: #FFFFFF;
+                                
+                                /* --Amber */
+                                --amber-400: #907349;
+                                --amber-300: #D7AB6D;
+                                --amber-200: #FDC980;
+                                --amber-100: #FEDDAF;
+                                --amber-50: #FFFBEB;
+    
+                                /* --Purple */
+                                --purple-400: #411782;
+                                --purple-300: #6D28D9;
+                                --purple-200: #9333EA;
+                                --purple-100: #E9D5FF;
+                                --purple-50: #F5F3FF;
+    
+                                /* --Orange */
+                                --orange-400: #C85C04;
+                                --orange-300: #FA7305;
+                                --orange-200: #FB923C;
+                                --orange-100: #FDC79B;
+                                --orange-50: #FEF1E6;
+    
+                                /* --Blue */
+                                --blue-400: #1F3B7A;
+                                --blue-300: #294FA3;
+                                --blue-200: #366CE2;
+                                --blue-100: #BFDBFE;
+                                --blue-50: #EFF6FF;
+    
+                                /* --Yellow */
+                                --yellow-400: #A16207;
+                                --yellow-300: #CA8A04;
+                                --yellow-200: #EAB308;
+                                --yellow-100: #FEF08A;
+                                --yellow-50: #FEFCE8;
+    
+                                /* --Red */
+                                --red-400: #AD341F;
+                                --red-300: #DC5138;
+                                --red-200: #FF6347;
+                                --red-100: #FFA999;
+                                --red-50: #FFE9E5;
+                            }
+                        </code>
+                    </pre>
                 </div>
-                <div class="wrap-color">
-                    <h4 class="title-wrap-color">Amber</h4>
-                    <div class="wrap-color-squares">
-                        <div class="color-square amber-400">
-                            <p class="text-color-squeare c-neutral-400">amber-400</p>
-                            <p class="text-color-squeare c-neutral-400">#907349</p>
-                        </div>
-                        <div class="color-square amber-300" >
-                            <p class="text-color-squeare c-neutral-400">amber-300</p>
-                            <p class="text-color-squeare c-neutral-400">#D7AB6D</p>
-                        </div>
-                        <div class="color-square amber-200">
-                            <p class="text-color-squeare c-neutral-400">amber-200</p>
-                            <p class="text-color-squeare c-neutral-400">#FDC980</p>
-                        </div>
-                        <div class="color-square amber-100">
-                            <p class="text-color-squeare c-neutral-400">amber-100</p>
-                            <p class="text-color-squeare c-neutral-400">#FEDDAF</p>
-                        </div>
-                        <div class="color-square amber-50">
-                            <p class="text-color-squeare c-neutral-400">amber-50</p>
-                            <p class="text-color-squeare c-neutral-400">#FFFBEB</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrap-color">
-                    <h4 class="title-wrap-color">Purple</h4>
-                    <div class="wrap-color-squares">
-                        <div class="color-square purple-400">
-                            <p class="text-color-squeare c-neutral-50">purple-400</p>
-                            <p class="text-color-squeare c-neutral-50">#411782</p>
-                        </div>
-                        <div class="color-square purple-300" >
-                            <p class="text-color-squeare c-neutral-50">purple-300</p>
-                            <p class="text-color-squeare c-neutral-50">#6D28D9</p>
-                        </div>
-                        <div class="color-square purple-200">
-                            <p class="text-color-squeare c-neutral-50">purple-200</p>
-                            <p class="text-color-squeare c-neutral-50">#9333EA</p>
-                        </div>
-                        <div class="color-square purple-100">
-                            <p class="text-color-squeare c-neutral-400">purple-100</p>
-                            <p class="text-color-squeare c-neutral-400">#E9D5FF</p>
-                        </div>
-                        <div class="color-square purple-50">
-                            <p class="text-color-squeare c-neutral-400">purple-50</p>
-                            <p class="text-color-squeare c-neutral-400">#F5F3FF</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrap-color">
-                    <h4 class="title-wrap-color">Orange</h4>
-                    <div class="wrap-color-squares">
-                        <div class="color-square orange-400">
-                            <p class="text-color-squeare c-neutral-400">orange-400</p>
-                            <p class="text-color-squeare c-neutral-400">#C85C04</p>
-                        </div>
-                        <div class="color-square orange-300" >
-                            <p class="text-color-squeare c-neutral-400">orange-300</p>
-                            <p class="text-color-squeare c-neutral-400">#FA7305</p>
-                        </div>
-                        <div class="color-square orange-200">
-                            <p class="text-color-squeare c-neutral-400">orange-200</p>
-                            <p class="text-color-squeare c-neutral-400">#FB923C</p>
-                        </div>
-                        <div class="color-square orange-100">
-                            <p class="text-color-squeare c-neutral-400">orange-100</p>
-                            <p class="text-color-squeare c-neutral-400">#FDC79B</p>
-                        </div>
-                        <div class="color-square orange-50">
-                            <p class="text-color-squeare c-neutral-400">orange-50</p>
-                            <p class="text-color-squeare c-neutral-400">#FEF1E6</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrap-color">
-                    <h4 class="title-wrap-color">Blue</h4>
-                    <div class="wrap-color-squares">
-                        <div class="color-square blue-400">
-                            <p class="text-color-squeare c-neutral-50">blue-400</p>
-                            <p class="text-color-squeare c-neutral-50">#1F3B7A</p>
-                        </div>
-                        <div class="color-square blue-300" >
-                            <p class="text-color-squeare c-neutral-50">blue-300</p>
-                            <p class="text-color-squeare c-neutral-50">#294FA3</p>
-                        </div>
-                        <div class="color-square blue-200">
-                            <p class="text-color-squeare c-neutral-50">blue-200</p>
-                            <p class="text-color-squeare c-neutral-50">#366CE2</p>
-                        </div>
-                        <div class="color-square blue-100">
-                            <p class="text-color-squeare c-neutral-400">blue-100</p>
-                            <p class="text-color-squeare c-neutral-400">#BFDBFE</p>
-                        </div>
-                        <div class="color-square blue-50">
-                            <p class="text-color-squeare c-neutral-400">blue-50</p>
-                            <p class="text-color-squeare c-neutral-400">#EFF6FF</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrap-color">
-                    <h4 class="title-wrap-color">Yellow</h4>
-                    <div class="wrap-color-squares">
-                        <div class="color-square yellow-400">
-                            <p class="text-color-squeare c-neutral-50">yellow-400</p>
-                            <p class="text-color-squeare c-neutral-50">#A16207</p>
-                        </div>
-                        <div class="color-square yellow-300" >
-                            <p class="text-color-squeare c-neutral-400">yellow-300</p>
-                            <p class="text-color-squeare c-neutral-400">#CA8A04</p>
-                        </div>
-                        <div class="color-square yellow-200">
-                            <p class="text-color-squeare c-neutral-400">yellow-200</p>
-                            <p class="text-color-squeare c-neutral-400">#EAB308</p>
-                        </div>
-                        <div class="color-square yellow-100">
-                            <p class="text-color-squeare c-neutral-400">yellow-100</p>
-                            <p class="text-color-squeare c-neutral-400">#FEF08A</p>
-                        </div>
-                        <div class="color-square yellow-50">
-                            <p class="text-color-squeare c-neutral-400">yellow-50</p>
-                            <p class="text-color-squeare c-neutral-400">#FEFCE8</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrap-color">
-                    <h4 class="title-wrap-color">Red</h4>
-                    <div class="wrap-color-squares">
-                        <div class="color-square red-400">
-                            <p class="text-color-squeare c-neutral-50">red-400</p>
-                            <p class="text-color-squeare c-neutral-50">#AD341F</p>
-                        </div>
-                        <div class="color-square red-300" >
-                            <p class="text-color-squeare c-neutral-400">red-300</p>
-                            <p class="text-color-squeare c-neutral-400">#DC5138</p>
-                        </div>
-                        <div class="color-square red-200">
-                            <p class="text-color-squeare c-neutral-400">red-200</p>
-                            <p class="text-color-squeare c-neutral-400">#FF6347</p>
-                        </div>
-                        <div class="color-square red-100">
-                            <p class="text-color-squeare c-neutral-400">red-100</p>
-                            <p class="text-color-squeare c-neutral-400">#FFA999</p>
-                        </div>
-                        <div class="color-square red-50">
-                            <p class="text-color-squeare c-neutral-400">red-50</p>
-                            <p class="text-color-squeare c-neutral-400">#FFE9E5</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
+
+            <section class="section-content">
+                <h3 class="sub-title">Reglas</h3>
+                <p class="paragraph">Contrast ratio.- El contraste mínimo se aplica principalmente al color base de cada grupo de colores. en esta lista se mostrará el color base  y su contrast ratio.</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="cell-head">Color base</th>
+                            <th class="cell-head">Color text</th>
+                            <th class="cell-head">Contrast ratio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cell-data">
+                                <div class="square primary-300"></div>
+                                <p class="">primary-300</p>
+                            </td>
+                            <td class="cell-data">
+                                <div class="square neutral-50"></div>
+                                <p class="">neutral-50</p>
+                            </td>
+                            <td>
+                                4.5
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-data">
+                                <div class="square neutral-300"></div>
+                                <p class="">neutral-300</p>
+                            </td>
+                            <td class="cell-data">
+                                <div class="square neutral-50"></div>
+                                <p class="">neutral-50</p>
+                            </td>
+                            <td>
+                                5.66
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-data">
+                                <div class="square amber-200"></div>
+                                <p class="">amber-200</p>
+                            </td>
+                            <td class="cell-data">
+                                <div class="square neutral-400"></div>
+                                <p class="">neutral-400</p>
+                            </td>
+                            <td>
+                                9.64
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-data">
+                                <div class="square purple-200"></div>
+                                <p class="">purple-200</p>
+                            </td>
+                            <td class="cell-data">
+                                <div class="square neutral-50"></div>
+                                <p class="">neutral-50</p>
+                            </td>
+                            <td>
+                                5.38
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-data">
+                                <div class="square orange-200"></div>
+                                <p class="">orange-200</p>
+                            </td>
+                            <td class="cell-data">
+                                <div class="square neutral-400"></div>
+                                <p class="">neutral-400</p>
+                            </td>
+                            <td>
+                                6.46
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-data">
+                                <div class="square blue-200"></div>
+                                <p class="">blue-200</p>
+                            </td>
+                            <td class="cell-data">
+                                <div class="square neutral-50"></div>
+                                <p class="">neutral-50</p>
+                            </td>
+                            <td>
+                                4.77
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-data">
+                                <div class="square yellow-200"></div>
+                                <p class="">yellow-200</p>
+                            </td>
+                            <td class="cell-data">
+                                <div class="square neutral-400"></div>
+                                <p class="">neutral-400</p>
+                            </td>
+                            <td>
+                                7.62
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="cell-data">
+                                <div class="square red-200"></div>
+                                <p class="">red-200</p>
+                            </td>
+                            <td class="cell-data">
+                                <div class="square neutral-400"></div>
+                                <p class="">neutral-400</p>
+                            </td>
+                            <td>
+                                4.96
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="section-content">
+                <h3 class="sub-title">Limitaciones</h3>
+                <p class="paragraph">Cantidad de colores.- En los productos de Wally (Páginas web, Landing, APP, Post, etc) se pudo encontrar un aproximado de 100 colores en producción y en la librería interna que manejamos en diseño se encontraron 200 colores, Esta cantidad de colores es difícil de manejar y se tuvo que hacer un recorte de los colores con el objetivo de pasar de 200 -> 40 colores, Aún es una cantidad considerable y se espera reducir aún más en futuras versiones del Style Guide, con el objetivo de ser escalable, fácil de manejar para los desarrolladores y el equipo de diseño.</p>
+                <img class="image-colors" src="./assets/colors-image.png" alt="colores de wally">
+            </section>
+        
+            <section class="section-content">
+                <h3 class="sub-title">Referencias</h3>
+                <p class="p-link"><a href="" class="section-link">Building a Color Palette -></a></p>
+                <p class="p-link"><a href="" class="section-link">How We Built Slack Kit -></a></p>
+            </section>
         </div>
     </div>
+    <script src="./js/prism.js"></script>
 </body>
