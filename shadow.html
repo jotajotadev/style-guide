@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Guia de estilos de Wally">
+    <meta name="keywords" content="Guia de estilos, Wally">
+    <meta name="author" content="José Flores Fernández">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/favicon.png" sizes="16x16">
+    <title>Shadows</title>
+    <link rel="stylesheet" href="./css/prism.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="wrap-header">
+            <a href="./index.html">
+                <img src="./assets/Logo.png" alt="logo de wally" class="logo-header">
+            </a>
+            <input class="search-header" id="search-header" type="search" placeholder="Muy pronto podrás buscar">
+        </div>
+    </header>
+    <aside class="aside-section">
+        <h4 class="title-aside">Style guide</h4>
+        <ul class="list-aside">
+            <a href="./tipography.html" class="link-aside"><li class="item-aside">Tipografía </li></a>
+            <a href="./colors.html" class="link-aside"><li class="item-aside">Colores</li></a>
+            <a href="./spacing.html" class="link-aside"><li class="item-aside">Espacio</li></a>
+            <a href="./shadow.html" class="link-aside select-tab"><li class="item-aside">Sombras</li></a>
+        </ul>
+    </aside>
+    <div class="body-container">
+        <div class="content-body-container">
+            <section class="section-content">
+                <h2 class="title heading-3-regular c-neutral-400">Sombras</h2>
+                <p class="paragraph text-1-regular c-neutral-300">La presente guía las sombras junto con el name convention. su principal uso es para dar elevación a ciertos elementos como: Cards. Articles. Sections, Dividers entre otros. En Wally el color “neutral-50 -> #FFFFFF” también se puede usar para dar elevación.</p>
+                <div class="group-card-shadows">
+                    <div class="card-shadow">
+                        <div class="show-shadow shadow-small"></div>
+                        <p class="name-shadow text-2-regular c-neutral-400">shadow-small</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">x: 0</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">y: 1</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">blur: 2</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">spread: 0</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">color: rgb(36, 104, 147, 0.05)</p>
+                    </div>
+                    <div class="card-shadow">
+                        <div class="show-shadow shadow"></div>
+                        <p class="name-shadow text-2-regular c-neutral-400">shadow</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">x: 0</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">y: 1</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">blur: 2</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">spread: 0</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">color: rgb(36, 104, 147, 0.05)</p>
+                    </div>
+                    <div class="card-shadow">
+                        <div class="show-shadow shadow-middle"></div>
+                        <p class="name-shadow text-2-regular c-neutral-400">shadow-middle</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">x: 0</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">y: 1</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">blur: 2</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">spread: 0</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">color: rgb(36, 104, 147, 0.05)</p>
+                    </div>
+                    <div class="card-shadow">
+                        <div class="show-shadow shadow-large"></div>
+                        <p class="name-shadow text-2-regular c-neutral-400">shadow-large</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">x: 0</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">y: 1</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">blur: 2</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">spread: 0</p>
+                        <p class="data-shadow text-4-regular c-neutral-300">color: rgb(36, 104, 147, 0.05)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-content">
+                <h3 class="sub-title heading-4-regular c-neutral-400">Sombras en CSS</h3>
+                <p class="paragraph text-1-regular c-neutral-300">Para hacer uso de las sombras solo es necesario copiar el código con el botón copiar que se muestra en la parte superior derecha.</p>
+                <div class="container-code">
+                    <pre>
+                        <code id="code" class="language-css">
+                            .shadow-small {
+                                box-shadow: 0 1px 2px rgba(36, 104, 147, 0.05);
+                            }
+                            
+                            .shadow {
+                                box-shadow: 0 1px 3px rgba(36, 104, 147, 0.1);
+                            }
+                            
+                            .shadow-middle {
+                                box-shadow: 0 4px 6px -1px rgba(36, 104, 147, 0.1);
+                            }
+                            
+                            .shadow-large {
+                                box-shadow: 0 10px 15px -3px rgba(36, 104, 147, 0.1);
+                            }                            
+                        </code>
+                    </pre>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="./js/prism.js"></script>
+</body>
